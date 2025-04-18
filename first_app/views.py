@@ -16,7 +16,7 @@ def os(req,number):
 
     file_content=""
 
-    with open(f"static/os/{file_name}.txt","r") as f:
+    with open(f"/home/hossam123/my_blog/static/os/{file_name}.txt","r") as f:
 
         file_content=f.read()
     
