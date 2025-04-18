@@ -77,14 +77,7 @@ WSGI_APPLICATION = 'first.wsgi.application'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 DATABASES = {
-      'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'emp',
-        'USER': 'root',
-        'PASSWORD': 'your_password',
-        'HOST': 'localhost',   # or IP address if remote
-        'PORT': '3306',        # default MySQL port
-    }
+    
 }
 
 
