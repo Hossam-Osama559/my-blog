@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Hossam Osama</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #2c3e50;
+        }
+
+        h2, h3 {
+            font-weight: normal;
+            color: #555;
+        }
+
+        div {
+            margin-top: 40px;
+            padding: 15px;
+            background-color: #fff;
+            border-left: 4px solid #3498db;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hossam Osama</h1>
+    <h2>I'm a computer science student in the second year ...</h2>
+    <h3>Love low-level stuff, love databases, love OS, ...</h3>
+
+    <div>
+        <h1>OS Stuff</h1>
+        <a href="{% url 'os' '1' %}">1-- xv6</a>
+    </div>
+</body>
+</html>

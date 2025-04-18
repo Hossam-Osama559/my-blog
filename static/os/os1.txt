@@ -1,0 +1,12 @@
+Geek, electronics nerd, database nerd, aviation nerd, father of three.
+On learning InnoDB: A journey to the core
+I’ve been using InnoDB for about a decade now, and up to now have understood it well enough to make it do what I wanted, most of the time. However in order to achieve some goals related to efficiency, I’ve found it necessary to take my understanding to the next level. Unfortunately, the InnoDB documentation was pretty lacking in clear explanations of InnoDB’s internal data structures. Reading the code turned out to be the only way to find the information I needed.
+
+However I quickly found that the structures and their usage (and especially their inter-relationships) are way too complex to keep in your head just based on reading the code. Additionally it’s only really possible to hope you’ve understood the structure correctly just based on reading (and for me, there were a lot of misunderstandings along the way).
+
+An approach I’ve long taken to understanding something that is complex and poorly documented is the following three steps:
+
+Read the existing documentation and the existing code, until a basic understanding is reached. Often there are serious misunderstandings or incorrect factorization at this step.
+Write my own implementation, even a very basic and broken one, preferably in a completely different language (which avoids the tendency to cut and paste anything). Revise my understanding based on what works and what doesn’t.
+Create new documentation and diagrams based on my new understanding. Refactor my implementation as necessary (the act of reviewing everything in order to document it often reveals incorrect factorizations). Correct documentation based on new understanding from refactoring code. Repeat until correct.
+Implementing InnoDB’s on-disk data structu
