@@ -10,7 +10,7 @@
             background-color: #f4f4f4;
             color: #333;
             margin: 0;
-            padding: 20px;
+            padding: 80px 20px 20px 20px; /* Extra top padding for fixed nav */
         }
 
         h1 {
@@ -41,16 +41,59 @@
         a:hover {
             text-decoration: underline;
         }
+
+        /* 🌐 Fixed top navigation bar */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #ffffff;
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+            z-index: 1000;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #2c3e50;
+            font-weight: 600;
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
     </style>
 </head>
 <body>
+    <nav>
+        <a href="https://github.com/Hossam-Osama559">GitHub</a>
+        <a href="#">LinkedIn</a>
+    </nav>
+
     <h1>Hossam Osama</h1>
     <h2>I'm a computer science student in the second year ...</h2>
     <h3>Love low-level stuff, love databases, love OS, ...</h3>
 
-    <div>
+    <div class="os">
         <h1>OS Stuff</h1>
-        <a href="{% url 'os' '1' %}">1-- xv6</a>
+        <a href="{% url 'os' '1' %}">1-- xv6</a><br>
+      
+    </div>
+
+    <div class="db">
+        <h1>Database</h1>
+
+
+    </div>
+
+    <div class="random">
+        <h1>Random</h1>
+
     </div>
 </body>
 </html>
